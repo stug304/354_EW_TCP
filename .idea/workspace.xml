@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d97f829e-be1e-4da2-a73c-17723592cbd4" name="Default" comment="">
+    <list default="true" id="d97f829e-be1e-4da2-a73c-17723592cbd4" name="Default" comment="Started startScreen code">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_home.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus.startScreen.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/images/bg.ai" afterPath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/images/bg.ai" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_index.html" afterPath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus.js" afterPath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_editor.js" afterPath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_editor.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/platform.js" afterPath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/platform.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,8 +36,8 @@
       <file leaf-file-name="Gamicus.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.851852" vertical-offset="8404" max-vertical-offset="8745">
-              <caret line="569" column="21" selection-start-line="569" selection-start-column="21" selection-end-line="569" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4672" max-vertical-offset="8790">
+              <caret line="320" column="57" selection-start-line="320" selection-start-column="57" selection-end-line="320" selection-end-column="57" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -39,31 +45,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="platform.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="platform.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/platform.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.546875" vertical-offset="510" max-vertical-offset="4995">
-              <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4304" max-vertical-offset="5565">
+              <caret line="291" column="25" selection-start-line="291" selection-start-column="25" selection-end-line="291" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gamicus_anim.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_anim.js">
+      <file leaf-file-name="354_index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="892" max-vertical-offset="2985">
-              <caret line="105" column="6" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.5" vertical-offset="90" max-vertical-offset="450">
+              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sprites.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/data/sprites.json">
+      <file leaf-file-name="rpg.js" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/A_JS_GAMEDEV_CODE/ch13/rpg.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="150">
-              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="5429" max-vertical-offset="7260">
+              <caret line="401" column="5" selection-start-line="375" selection-start-column="2" selection-end-line="401" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gamicus_dom.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_dom.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4815">
+              <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gamicus_editor.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_editor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3457" max-vertical-offset="5685">
+              <caret line="239" column="4" selection-start-line="239" selection-start-column="4" selection-end-line="239" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gamicus_home.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1695">
+              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -82,11 +118,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus.js" />
         <option value="$PROJECT_DIR$/beta/TheChosenPath/editor/public/data/sprites.json" />
         <option value="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_platformer.js" />
         <option value="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_anim.js" />
+        <option value="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus.startScreen.js" />
+        <option value="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_startScreen.js" />
+        <option value="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_editor.js" />
         <option value="$PROJECT_DIR$/beta/TheChosenPath/editor/public/platform.js" />
+        <option value="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_home.js" />
+        <option value="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus.js" />
+        <option value="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_index.html" />
       </list>
     </option>
   </component>
@@ -121,6 +162,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -239,7 +281,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -250,7 +291,7 @@
     <property name="options.lastSelected" value="configurable.group.project" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="last_opened_file_path" value="$USER_HOME$/345_EW_TCP/beta/TheChosenPath/editor/public/platform.js" />
+    <property name="last_opened_file_path" value="$USER_HOME$/A_JS_GAMEDEV_CODE/ch13/rpg.js" />
   </component>
   <component name="RunManager" selected="JavaScript Debug.354_index.html">
     <configuration default="false" name="platform.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="platform.js" working-dir="$PROJECT_DIR$/beta/TheChosenPath/editor/public">
@@ -264,10 +305,14 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -275,10 +320,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -294,6 +335,11 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <list size="2">
@@ -324,24 +370,56 @@
       <option name="project" value="LOCAL" />
       <updated>1421903161522</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Removed unneeded if block in hurtPlayer">
+      <created>1421903449335</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1421903449335</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Started startScreen code">
+      <created>1421910200436</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1421910200436</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1260" height="732" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44788274" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39739415" sideWeight="0.49959645" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39739415" sideWeight="0.5004035" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32899022" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3961039" sideWeight="0.49959645" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39739415" sideWeight="0.5004035" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24939467" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2542373" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -368,25 +446,61 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Corrected Enemy death animation, destroying when death animation ends.  Also, corrected crash issue when the Player shoots an already dieing Enemy, to fix this I unbound all event handlers except the animEnd.die_ events." />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrected Enemy death animation, destroying when death animation ends.  Also, corrected crash issue when the Player shoots an already dieing Enemy, to fix this I unbound all event handlers except the animEnd.die_ events." />
+    <MESSAGE value="Removed unneeded if block in hurtPlayer" />
+    <MESSAGE value="Started startScreen code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started startScreen code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/platform.js</url>
-          <line>66</line>
+          <line>74</line>
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="8805">
+          <caret line="68" column="3" selection-start-line="68" selection-start-column="3" selection-end-line="68" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/platform.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4995">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_editor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-126.111115" vertical-offset="0" max-vertical-offset="5685">
-          <caret line="227" column="28" selection-start-line="227" selection-start-column="28" selection-end-line="227" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2790" max-vertical-offset="5685">
+          <caret line="186" column="39" selection-start-line="186" selection-start-column="39" selection-end-line="186" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="2280">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/data/sprites.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="150">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -399,36 +513,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.851852" vertical-offset="8404" max-vertical-offset="8745">
-          <caret line="569" column="21" selection-start-line="569" selection-start-column="21" selection-end-line="569" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_platformer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5699659" vertical-offset="2006" max-vertical-offset="4500">
-          <caret line="156" column="28" selection-start-line="156" selection-start-column="28" selection-end-line="156" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/345_EW_TCP/beta/TheChosenPath/editor/public/platform.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3720">
           <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="60" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_anim.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="892" max-vertical-offset="2985">
+          <caret line="105" column="6" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/enchantedWarriors/ew_platform/platformer/ch18/platform.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3450">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -443,24 +546,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_svg.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3327645" vertical-offset="1920" max-vertical-offset="2925">
+        <state vertical-scroll-proportion="6.148256" vertical-offset="0" max-vertical-offset="2925">
           <caret line="141" column="4" selection-start-line="141" selection-start-column="4" selection-end-line="141" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_anim.js">
+    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_platformer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="892" max-vertical-offset="2985">
-          <caret line="105" column="6" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
+        <state vertical-scroll-proportion="-1.3549488" vertical-offset="3134" max-vertical-offset="4500">
+          <caret line="156" column="28" selection-start-line="156" selection-start-column="28" selection-end-line="156" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30716723" vertical-offset="0" max-vertical-offset="5685">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_scenes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.8651876" vertical-offset="0" max-vertical-offset="3150">
+          <caret line="151" column="4" selection-start-line="151" selection-start-column="4" selection-end-line="151" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_dom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1815" max-vertical-offset="4815">
+          <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/A_JS_GAMEDEV_CODE/ch13/rpg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5429" max-vertical-offset="7260">
+          <caret line="401" column="5" selection-start-line="375" selection-start-column="2" selection-end-line="401" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/platform.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.546875" vertical-offset="510" max-vertical-offset="4995">
-          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="4304" max-vertical-offset="5565">
+          <caret line="291" column="25" selection-start-line="291" selection-start-column="25" selection-end-line="291" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_editor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3457" max-vertical-offset="5685">
+          <caret line="239" column="4" selection-start-line="239" selection-start-column="4" selection-end-line="239" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1695">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4672" max-vertical-offset="8790">
+          <caret line="320" column="57" selection-start-line="320" selection-start-column="57" selection-end-line="320" selection-end-column="57" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5" vertical-offset="90" max-vertical-offset="450">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
           <folding />
         </state>
       </provider>

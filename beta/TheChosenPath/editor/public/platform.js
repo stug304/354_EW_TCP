@@ -1,7 +1,15 @@
 $(function() {
   var G = window.G = Gamicus()
-                     .include('Input,Sprites,Scenes,Anim,Platformer,Editor')
+                     .include('Input,Sprites,Scenes,Anim,Platformer,Editor,Home')
                      .setup('gamicus', { maximize: true });
+
+  G.scene('start',new G.Scene(function(stage) {
+    stage.add('home');
+  }, { sort: true }));
+
+
+
+
 
   G.Enemy = G.Sprite.extend({
     init:function(props) {
@@ -113,7 +121,7 @@ $(function() {
             left: [[ 5,15], [ 5,40]], 
             bottom: [[ 20,51 ]],
             right: [[ 30,15], [ 30,40]]*/
- 
+
       this.bind('animEnd.fire_right',this,"launchBullet");
       this.bind('animEnd.fire_left',this,"launchBullet");
       this.bind('hit.tile',this,'tile');
@@ -226,7 +234,7 @@ $(function() {
     }
   });*/
   
-  
+
   G.Bullet = G.Sprite.extend({
     init: function(props) {
       this._super(_(props).extend({ w:20, h:2, 
@@ -258,7 +266,7 @@ $(function() {
   if(match) {
     levelFile = match[1] + '.json';
   }
-   
+
   G.scene('level',new G.Scene(function(stage) {
     stage.insert(new G.Repeater({ asset: 'redMountainsBackGround.png', 
                                   speedX: 0.5, repeatY:false, y:-255, x:0, z:0 }));
@@ -283,13 +291,39 @@ $(function() {
     stage.add('viewport');
     stage.follow(player);
 
+  }, { sort: true }));
+
+  G.scene('levelEditor',new G.Scene(function(stage) {
+    stage.insert(new G.Repeater({ asset: 'redMountainsBackGround.png',
+      speedX: 0.5, repeatY:false, y:-255, x:0, z:0 }));
+    stage.insert(new G.Repeater({ asset: 'redMountainsMidGround.png',
+      speedX: 0.75, repeatY:false, y:-55, x:0, z:0 }));
+    stage.insert(new G.Repeater({ asset: 'redMountainsForeGround.png',
+      speedX: 1, repeatY:false, y:-5, x:0, z:0 }));
+    var tiles = stage.insert(new G.TileLayer({ sheet: 'block',
+      x: -100, y: -100,
+      tileW: 32,
+      tileH: 32,
+      dataAsset: levelFile,
+      z:1 }));
+    stage.collisionLayer(tiles);
+    var player = stage.insert(new G.Player({ x:100, y:0, z:3, sheet: 'man' }));
+
+    stage.insert(new G.Enemy({ x:400, y:0, z:3 }));
+    stage.insert(new G.Enemy({ x:600, y:0, z:3 }));
+    //stage.insert(new G.Enemy({ x:1200, y:100, z:3 }));
+    //stage.insert(new G.Enemy({ x:1600, y:0, z:3 }));
+
+    stage.add('viewport');
+    stage.follow(player);
     stage.add('editor');
     stage.editor.setFile(levelFile);
-    stage.bind('reset',function() {  
-      G.stageScene("level",0,G.PlatformStage);
+    stage.bind('reset',function() {
+      G.stageScene("levelEditor",0,G.PlatformStage);
     });
 
   }, { sort: true }));
+
 
   G.load(['sprites_newNew.png','sprites.json',
           'redMountainsBackGround.png','redMountainsForeGround.png','redMountainsMidGround.png',levelFile],function() {
@@ -321,7 +355,11 @@ $(function() {
       dead_right: { frames: [42], loop: false },
       dead_left: { frames: [47], loop: false }
     });
-    G.stageScene("level",0,G.PlatformStage);
+
+
+    //Set scene to display
+    G.stageScene("start",0,G.PlatformStage);
+
   });
 });
 

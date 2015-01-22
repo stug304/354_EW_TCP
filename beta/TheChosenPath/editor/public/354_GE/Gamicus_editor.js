@@ -213,7 +213,7 @@ Gamicus.Editor = function(G) {
         G.el.off('touchend mouseup',this.release);
         this.select('play');
         this.buttons['play'].text('reset');
-        this.buttons['play'].html('<br/>')
+        this.buttons['play'].html('<br/>');
         this.buttons['play'].css({float:'left',
                          margin: "10px 5px",
                          padding:"15px 5px",
@@ -307,7 +307,7 @@ Gamicus.Editor = function(G) {
 
     tile: function() {
       if(!this.tiles) this.setupTiles();
-      $(this.tiles).show();
+      $(this.tiles).fadeIn(600);
     },
     
     setupTiles: function() {
@@ -326,11 +326,11 @@ Gamicus.Editor = function(G) {
       }
       $(this.tiles)
         .prependTo(G.wrapper)
-        .css({position:'absolute',
+        .css({position:'relative',
               top: 60,
-              left: 100,
+              left: 0,
               zIndex: 200,
-              margin: '25px',
+              margin: '50px',
               background: 'url(images/menuBg.png)',
               backgroundSize: '100% 100%',
               backgroundRepeat: 'no-repeat',

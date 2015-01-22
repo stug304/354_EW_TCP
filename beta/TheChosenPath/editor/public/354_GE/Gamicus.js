@@ -63,6 +63,10 @@
   };
 })();
 
+/* GAMICUS 2D Gaming Platform using prototyping
+  Developed by Stu Green
+  CopyRight 2014
+ */
 
 (function() {
     var lastTime = 0;
@@ -123,7 +127,7 @@ var Gamicus = function(opts) {
     return G;
   };
 
-  // Syntax for including other modules into quintus
+  // Syntax for including other modules into gamicus
   G.include = function(mod) {
     _.each(G._normalizeArg(mod),function(m) {
       m = Gamicus[m] || m;
@@ -298,7 +302,7 @@ var Gamicus = function(opts) {
   G.setup = function(id, options) {
     var touchDevice = 'ontouchstart' in document;
     options = options || {};
-    id = id || "quintus";
+    id = id || "gamicus";
     G.el = $(_.isString(id) ? "#" + id : id);
 
     if(G.el.length === 0) {
@@ -314,7 +318,7 @@ var Gamicus = function(opts) {
     if(options.maximize) {
       $("html, body").css({ padding:0, margin: 0 });
       var w = Math.min(window.innerWidth,maxWidth);
-      var h = Math.min(window.innerHeight - 5,maxHeight)
+      var h = Math.min(window.innerHeight - 5,maxHeight);
 
       if(touchDevice) {
         G.el.css({height: h * 2});
@@ -341,10 +345,9 @@ var Gamicus = function(opts) {
                  .parent()
                  .css({ width: G.el.width(),
                         margin: '0 auto',
-                        background: 'url(images/bg.png)',
+                        backgroundColor: '#000',
                         backgroundSize: '100% 100%',
-                        backgroundRepeat: 'no-repeat',
-                        padding: '20px'});
+                        padding: '0px'});
 
     G.el.css('position','relative');
 
@@ -517,7 +520,7 @@ var Gamicus = function(opts) {
       // if there is one
       if(assetsRemaining === 0 && callback) {
         // if we haven't set up our canvas element yet,
-        // assume we're using a canvas with id 'quintus'
+        // assume we're using a canvas with id 'gamicus'
         callback.apply(G); 
       }
     };
@@ -568,10 +571,10 @@ var Gamicus = function(opts) {
     ctx.drawImage(img,0,0);
 
     return ctx.getImageData(0,0,img.width,img.height);
-  }
+  };
 
 
 
   return G;
-}
+};
 
