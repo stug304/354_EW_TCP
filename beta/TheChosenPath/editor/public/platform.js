@@ -16,9 +16,7 @@ $(function() {
         speed: 100,
         direction: 'left'
       }));
-      this.bind('damage',this,'damage');
-      this.bind('hit.tile',this,'changeDirection');
-      this.bind('hit.sprite',this,'hurtPlayer');
+
       this.add('animation, 2d')
           .collisionPoints({
             top: [[ 25, 9]],
@@ -26,6 +24,11 @@ $(function() {
             bottom: [[ 32, 64 ]],
             right: [[ 42,32], [ 42,49]]
           });
+      this.bind('animEnd.die_right',this,"destroyEnemy");
+      this.bind('animEnd.die_left',this,"destroyEnemy");
+      this.bind('damage',this,'damage');
+      this.bind('hit.tile',this,'changeDirection');
+      this.bind('hit.sprite',this,'hurtPlayer');
     },
 
     changeDirection: function(col) {
@@ -37,12 +40,14 @@ $(function() {
     },
 
     hurtPlayer: function(col) {
-      if(col.p.x < this.p.x) {
-        col.p.x -= 10;
-        col.damage(5);
-      } else {
-        col.p.x += 10;
-        col.damage(5);
+      if ((col.p.direction.indexOf("die") == -1) || (col.p.direction.indexOf("dead")==-1)) {
+        if (col.p.x < this.p.x) {
+          col.p.x -= 10;
+          col.damage(5);
+        } else {
+          col.p.x += 10;
+          col.damage(5);
+        }
       }
     },
 
@@ -53,9 +58,13 @@ $(function() {
         p.direction = "die_" + p.direction;
         p.vx = 0;
         p.speed = 0;
-        //p.dead = true;
+        p.dead = true;
       }
-    }, 
+    },
+
+    destroyEnemy: function() {
+      this.destroy();
+    },
 
     step: function(dt) {
       var p = this.p;
@@ -66,13 +75,13 @@ $(function() {
         } else if (p.direction == 'left') {
           this.play('run_left');
           p.vx = -p.speed;
-        } else {
-          this.play(p.direction);
-          if (p.animationEnd == true) {
-          }
         }
       } else {
-        this.destroy();
+        p.vx = 0;
+        this.unbind('damage');
+        this.unbind('hit.tile');
+        this.unbind('hit.sprite');
+        this.play(p.direction);
       }
       this._super(dt);
     }
@@ -309,8 +318,10 @@ $(function() {
     G.animations('blob', {
       run_right: { frames: _.range(2,14,1), rate: 1/5 },
       run_left: { frames: _.range(27,15,-1), rate: 1/5 },
-      die_right: { frames: _.range(37,42,1), loop: false },
-      die_left: { frames: _.range(47,43,-1), loop: false }
+      die_right: { frames: _.range(37,42,1), next: 'dead_right', rate: 1/5 },
+      die_left: { frames: _.range(47,43,-1), next: 'dead_left', rate: 1/5 },
+      dead_right: { frames: [42], loop: false },
+      dead_left: { frames: [47], loop: false }
     });
     G.stageScene("level",0,G.PlatformStage);
   });

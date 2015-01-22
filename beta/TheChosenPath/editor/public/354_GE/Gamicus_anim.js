@@ -16,7 +16,6 @@ Gamicus.Anim = function(G) {
       p.animationPriority = -1;
       p.animationFrame = 0;
       p.animationTime = 0;
-      p.animationEnd = false;
       this.entity.bind("step",this,"step");
     },
     extend: {
@@ -62,8 +61,6 @@ Gamicus.Anim = function(G) {
             }
           }
           entity.trigger("animFrame");
-        } else {
-          p.animationEnd = true;
         }
         p.sheet = anim.sheet || p.sheet;
         p.frame = anim.frames[p.animationFrame];
@@ -91,7 +88,7 @@ Gamicus.Anim = function(G) {
     added: function() {
       this.entity.bind('predraw',this,'predraw');
       this.entity.bind('draw',this,'postdraw');
-      this.x = 0,
+      this.x = 0;
       this.y = 0;
       this.centerX = G.width/2;
       this.centerY = G.height/2;
