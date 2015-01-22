@@ -40,14 +40,12 @@ $(function() {
     },
 
     hurtPlayer: function(col) {
-      if ((col.p.direction.indexOf("die") == -1) || (col.p.direction.indexOf("dead")==-1)) {
-        if (col.p.x < this.p.x) {
-          col.p.x -= 10;
-          col.damage(5);
-        } else {
-          col.p.x += 10;
-          col.damage(5);
-        }
+      if (col.p.x < this.p.x) {
+        col.p.x -= 10;
+        col.damage(5);
+      } else {
+        col.p.x += 10;
+        col.damage(5);
       }
     },
 

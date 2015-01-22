@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d97f829e-be1e-4da2-a73c-17723592cbd4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/images/btnSave.ai" afterPath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/images/btnSave.ai" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_anim.js" afterPath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_anim.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/platform.js" afterPath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/platform.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -41,20 +39,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="platform.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="platform.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/platform.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3735" max-vertical-offset="5025">
-              <caret line="254" column="5" selection-start-line="254" selection-start-column="5" selection-end-line="254" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.546875" vertical-offset="510" max-vertical-offset="4995">
+              <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gamicus_anim.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Gamicus_anim.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_anim.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334" vertical-offset="1447" max-vertical-offset="2985">
+            <state vertical-scroll-proportion="0.0" vertical-offset="892" max-vertical-offset="2985">
               <caret line="105" column="6" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
               <folding />
             </state>
@@ -320,6 +318,13 @@
       <option name="number" value="Default" />
       <updated>1418678994247</updated>
     </task>
+    <task id="LOCAL-00001" summary="Corrected Enemy death animation, destroying when death animation ends.  Also, corrected crash issue when the Player shoots an already dieing Enemy, to fix this I unbound all event handlers except the animEnd.die_ events.">
+      <created>1421903161522</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1421903161522</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -362,14 +367,15 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Corrected Enemy death animation, destroying when death animation ends.  Also, corrected crash issue when the Player shoots an already dieing Enemy, to fix this I unbound all event handlers except the animEnd.die_ events." />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected Enemy death animation, destroying when death animation ends.  Also, corrected crash issue when the Player shoots an already dieing Enemy, to fix this I unbound all event handlers except the animEnd.die_ events." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/platform.js</url>
-          <line>68</line>
+          <line>66</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -443,18 +449,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/platform.js">
+    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_anim.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3735" max-vertical-offset="5025">
-          <caret line="254" column="5" selection-start-line="254" selection-start-column="5" selection-end-line="254" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="892" max-vertical-offset="2985">
+          <caret line="105" column="6" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus_anim.js">
+    <entry file="file://$PROJECT_DIR$/beta/TheChosenPath/editor/public/platform.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="1447" max-vertical-offset="2985">
-          <caret line="105" column="6" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.546875" vertical-offset="510" max-vertical-offset="4995">
+          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
           <folding />
         </state>
       </provider>
