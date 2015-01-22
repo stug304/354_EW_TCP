@@ -63,6 +63,10 @@
   };
 })();
 
+/* GAMICUS 2D Gaming Platform using prototyping
+  Developed by Stu Green
+  CopyRight 2014
+ */
 
 (function() {
     var lastTime = 0;
