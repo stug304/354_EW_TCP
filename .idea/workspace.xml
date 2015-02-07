@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d97f829e-be1e-4da2-a73c-17723592cbd4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/354_GE/Gamicus.startScreen.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/images/Untitled-6.ai" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/images/bg.ai" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/images/btnPaint.ai" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/images/btnSave.ai" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/images/ew_logo1.ai" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/images/redMountainsBackGround.ai" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/images/redMountainsForeGround.ai" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/images/redMountainsMidGround.ai" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/images/sprites_new.ai" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beta/TheChosenPath/editor/public/images/sprites_newNew.ai" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="354_EW_TCP.iws" />
@@ -383,7 +392,13 @@
       <option name="project" value="LOCAL" />
       <updated>1423286516700</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Started startScreen code">
+      <created>1423287079299</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1423287079299</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
