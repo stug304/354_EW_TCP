@@ -362,8 +362,28 @@ Gamicus.Editor = function(G) {
     save: function() {
       var levelName = prompt("Level Name?",this.levelFile);
       if(levelName) {
-        $.post('/save',{ tiles: this.entity.collision.p.tiles, 
-        level: levelName });
+        //$.post('/save',{ tiles: this.entity.collision.p.tiles, level: levelName });
+/*
+          var data = _(this.entity.collision.p.tiles).map(function(row) {
+              return _(row).map(function(tile) { return Number(tile); });
+          });
+              var textFileAsBlob = new Blob([data], {type:'text/plain'});
+              var fileNameToSaveAs = levelName + ".json";
+
+              var downloadLink = document.createElement("a");
+              downloadLink.download = fileNameToSaveAs;
+              downloadLink.innerHTML = "saveLink";
+          downloadLink.id = "saveLink";
+              window.URL = window.URL || window.webkitURL;
+              downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+              downloadLink.onclick = destroyClickedElement;
+              downloadLink.style.display = "none";
+              document.body.appendChild(downloadLink);
+              downloadLink.click();
+          downloadLink.remove();
+*/
+
+
       }
     }
 

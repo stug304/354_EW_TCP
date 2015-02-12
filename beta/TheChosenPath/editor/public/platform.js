@@ -1,16 +1,14 @@
 $(function() {
   var G = window.G = Gamicus()
-                     .include('Input,Sprites,Scenes,Anim,Platformer,Editor,Home')
+                     .include('Input,Sprites,Scenes,Anim,Platformer,Editor,Home,HUD')
                      .setup('gamicus', { maximize: true });
 
+  //Start Screen
   G.scene('start',new G.Scene(function(stage) {
     stage.add('home');
   }, { sort: true }));
 
-
-
-
-
+  //Enemy instance setup
   G.Enemy = G.Sprite.extend({
     init:function(props) {
       this._super(_(props).extend({
@@ -20,6 +18,7 @@ $(function() {
         type: 2,
         collisionMask: 5,
         health: 50,
+        maxHealth: 50,
         dead: false,
         speed: 100,
         direction: 'left'
@@ -92,7 +91,8 @@ $(function() {
       this._super(dt);
     }
   });
-                     
+
+  //Player instance setup
   G.Player = G.Sprite.extend({
     init:function(props) {
       this._super(_(props).extend({
@@ -103,6 +103,7 @@ $(function() {
         standing: 3,
         type: 4,
         health: 100,
+        maxHealth: 100,
         collisionMask: 1,
         direction: 'right'
       }));
@@ -114,14 +115,7 @@ $(function() {
             bottom: [[ 32, 64 ]],
             right: [[ 42,32], [ 42,49]]
           });
-          
-            
-          /*.collisionPoints({
-            top: [[ 20, 3]],
-            left: [[ 5,15], [ 5,40]], 
-            bottom: [[ 20,51 ]],
-            right: [[ 30,15], [ 30,40]]*/
-
+      this.bind('updateHealthBar',this,"updateHealthBar")
       this.bind('animEnd.fire_right',this,"launchBullet");
       this.bind('animEnd.fire_left',this,"launchBullet");
       this.bind('hit.tile',this,'tile');
@@ -135,10 +129,22 @@ $(function() {
 
     damage: function(amount) {
       this.p.health -= amount;
+      this.updateHealthBar(this.p);
       if(this.p.health < 0) {
         G.stageScene("level",0,G.PlatformStage);
       }
     },
+
+    updateHealthBar: function(sprite) {
+      $("#hud-healthBar")
+          .animate({
+            width: this.p.health + "%"
+          }, {
+            queue: false,
+            duration: 1
+          })
+    },
+
     launchBullet: function() {
       var p = this.p,
           vx = p.direction == 'right' ? 500 : -500,
@@ -234,7 +240,7 @@ $(function() {
     }
   });*/
   
-
+  //Bullet instance setup
   G.Bullet = G.Sprite.extend({
     init: function(props) {
       this._super(_(props).extend({ w:20, h:2, 
@@ -261,12 +267,14 @@ $(function() {
     }
   });
 
+  //Check for the level file
   var match = window.location.search.match(/level=([^\&]+)/),
       levelFile = 'level.json';
   if(match) {
     levelFile = match[1] + '.json';
   }
 
+  //Create level scene setup
   G.scene('level',new G.Scene(function(stage) {
     stage.insert(new G.Repeater({ asset: 'redMountainsBackGround.png', 
                                   speedX: 0.5, repeatY:false, y:-255, x:0, z:0 }));
@@ -285,14 +293,17 @@ $(function() {
 
     stage.insert(new G.Enemy({ x:400, y:0, z:3 }));
     stage.insert(new G.Enemy({ x:600, y:0, z:3 }));
-    //stage.insert(new G.Enemy({ x:1200, y:100, z:3 }));
-    //stage.insert(new G.Enemy({ x:1600, y:0, z:3 }));
+    stage.insert(new G.Enemy({ x:1200, y:100, z:3 }));
+    stage.insert(new G.Enemy({ x:1600, y:0, z:3 }));
 
     stage.add('viewport');
     stage.follow(player);
-
+    stage.add('hud');
+    stage.bind('reset',function() {
+      G.stageScene("levelEditor",0,G.PlatformStage);
+    });
   }, { sort: true }));
-
+  //Level Editor scene setup
   G.scene('levelEditor',new G.Scene(function(stage) {
     stage.insert(new G.Repeater({ asset: 'redMountainsBackGround.png',
       speedX: 0.5, repeatY:false, y:-255, x:0, z:0 }));
@@ -324,11 +335,12 @@ $(function() {
 
   }, { sort: true }));
 
-
+  //Load and compile Sprite sheets
   G.load(['sprites_newNew.png','sprites.json',
           'redMountainsBackGround.png','redMountainsForeGround.png','redMountainsMidGround.png',levelFile],function() {
     G.compileSheets('sprites_newNew.png','sprites.json');
 
+    //Player animation setup
     G.animations('player', {
       run_right: { frames: _.range(2,15,1), rate: 1/15}, 
       run_left: { frames: _.range(29,16,-1), next: 'stand_left', rate:1/15 },
@@ -347,6 +359,7 @@ $(function() {
     });
     */
 
+    //Enemy animation setup
     G.animations('blob', {
       run_right: { frames: _.range(2,14,1), rate: 1/5 },
       run_left: { frames: _.range(27,15,-1), rate: 1/5 },
@@ -356,8 +369,7 @@ $(function() {
       dead_left: { frames: [47], loop: false }
     });
 
-
-    //Set scene to display
+    //Set scene to display at startup
     G.stageScene("start",0,G.PlatformStage);
 
   });
